@@ -1,0 +1,39 @@
+.height{
+    height: 3000px;
+}
+
+.height::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.height::before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: url(g.png) no-repeat center center;
+    background-size: contain;
+}
+
+ol{
+    list-style: none;
+
+    counter-reset: mark;
+}
+
+ol li::before{
+    counter-increment: mark;
+
+    content: counters(mark,", ,") ". ";
+}
+
+ol li{
+    list-style-type: circle;
+    list-style-image: url();
+    list-style-image: linear-gradient(#FF7A2F 0, #FF7A2F 50%, #FFB214 50%);
+    list-style-position: inside; /* outside*/
+
+    list-style: url() inside;
+}

@@ -1,0 +1,14 @@
+.calendar-body{
+    width: 500px;
+    border: 1px solid black;
+}
+.day{
+    width: 71px;
+    height: 46px;
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+}
+.day.current{
+    background: red;
+}

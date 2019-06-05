@@ -1,0 +1,109 @@
+body{
+    font-size: 20px;
+}
+
+[href="http://google.com.ua/"]{
+    color: red;
+}
+
+abbr[title="world wide web"]{
+    color: firebrick;
+}
+
+[title]{
+
+}
+
+[title|="world"]{
+
+}
+
+/* html5book.ru - CSS - Основы CSS \ 2.8 */
+
+/*
+div#paragraph1 .note{
+    color: cyan;
+}
+*/
+
+div#paragraph1 > .note{
+    color: green;
+}
+
+b + i {
+    color: red;
+}
+
+h1 ~ p {
+    text-decoration: underline;
+}
+
+a:link{
+
+}
+
+a:visited{
+    color: gold;
+}
+
+a:hover{
+    color: brown;
+}
+
+a:active{
+    color: fuchsia;
+}
+
+a:not(.first){
+    font-size: 20px;
+}
+
+p::first-letter{
+    font-size: 40px;
+    font-weight: 700;
+    /* 100 - 900 */
+}
+
+p, b, .block, #footer{
+
+}
+
+p b .block #footer{
+
+}
+
+.color{
+    height: 200px;
+    background: rgb(227, 139, 50);
+    background: #e38b32;
+    background: rgba(227, 139, 50, 0.5);
+    background: rgba(227, 139, 50, .5);
+    background: rgba(10%, 100%, 5%, 0.5);
+    background: hsla(240, 100%, 50%, 0.5);
+    background: transparent; 
+    
+    /*rgba(0, 0, 0, 0);*/
+
+}
+
+p{
+    font-size: 1em;
+}
+
+h1{
+    font-size: 7em;
+    margin-top: 20px;
+}
+
+h1{
+    margin-top: 1em;
+}
+
+abbr{
+    font-size: 150%;
+}
+
+
+
+
+

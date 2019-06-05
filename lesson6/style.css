@@ -1,0 +1,188 @@
+.text-transfrom{
+    text-transform: capitalize;
+    /*
+        none
+        uppercase - Все буквы в словах большие
+        lowercase - делает буквы маленькими
+        capitalize - 1 буква большой
+    */
+
+    white-space: nowrap;
+    /*
+        nowrap - запрещает переносы кроме br
+        pre - отображает текст как есть
+        pre-wrap - отображает все пробелы
+        pre-line - удаляет все лишние пробелы кроме br
+    */
+
+    tab-size: 30px; /* Пиксельно и целое значение */
+
+    word-break: normal;
+    /*
+        normal
+        break-all
+        keep-all
+    */
+
+    line-break: strict;
+    /*
+        auto
+        loose
+        normal
+        strict
+    */
+
+    text-align: justify;
+    /*
+        start
+        left
+        end
+        right
+        center
+        justify
+        justify-all
+    */
+
+    text-align-last: justify;
+
+    word-spacing: 4px;
+    /*
+        пиксельное
+        em
+        %
+    */
+
+    letter-spacing: 3px;
+      /*
+        пиксельное
+        em
+    */
+
+    font-kerning: normal;
+    /*
+        auto
+        normal
+        none
+    */
+
+    text-indent: 30px;
+    /*
+        пиксельное
+        %
+        ________________________
+        each-line -  для первой строки
+        hanging - для всех остальных
+    */
+
+    line-height: 1.5;
+
+    font-family: Impact;
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+     /* 
+    Serif
+    sans-serif
+    Monospace
+    Cursive
+    fantasy
+    system-ui
+    */
+
+    font-weight: 900;
+
+    font-style: oblique;
+
+    /* italic 
+        oblique
+    */
+
+    font-size: 20px;
+    
+    font: 12px/24px Arial;
+
+    color: green;
+
+    text-overflow: ellipsis;
+    /*
+    Работает в связке с overflow: hidden; 
+    */
+}
+
+.button{
+    font-size: 20px;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    line-height: 40px;
+}
+
+.text-transform::first-line{
+    text-decoration: blink;
+
+    /*
+        underline
+        line-through - перечеркнутый
+        overline
+    */
+}
+
+.align{
+    text-align: justify;
+}
+.align div{
+    display: inline-block;
+}
+
+.liner-gradient{
+    height: 200px;
+    background: linear-gradient(to top left, #EECFBA, #C5DDE8);
+    background: linear-gradient(to top left, #EECFBA, #C5DDE8, #000000);
+    background: linear-gradient(to right, #EECFBA 20%, #C5DDE8 20%, #000000 40%, #ffffff 100%);
+    /*
+        to top
+        to right
+        to bottom
+        to left
+        0deg
+        to top left
+    */
+}
+
+
+a:link{
+
+}
+
+.p1 a:link{
+    color: #000000;
+}
+
+
+.radial-gradient{
+    height: 300px;
+    background: radial-gradient(white, #FFA9A1);
+    background: radial-gradient(at top, white, #FFA9A1);
+    background: radial-gradient(20% 10%, white, #FFA9A1);
+    background: radial-gradient(circle farthest-corner at 100px 50px, black 0%, transparent 20%, red);
+    /* 
+    ellipse \ circle - форма
+    farthest-corner - до дальних углов
+    closest-corner - до ближайших углов
+    closest-side - до ближайшей стороны
+    farthest-side -  до дальней стороны
+
+    */
+}
+
+.linear-repit{
+    height: 300px;
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px,
+    #465298 10px, #465298 20px);
+} 
+
+.linear-repit2{
+    height: 300px;
+    background: repeating-radial-gradient(circle, #606dbc, #606dbc 10px,
+    #465298 10px, #465298 20px);
+} 

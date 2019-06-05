@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+#header{
+    min-height: 100px;
+    background: purple;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+
+#main .aside{
+    float: left;
+    width: 300px;
+    background: green;
+    min-height: 500px;
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+
+#main .content{
+    width: calc(100% - 300px);
+    /*
+        calc((100% - 300px) / 2)
+        + - * /
+        cm mm in pt pc px
+        deg grad rad turn
+        s ms
+    */
+    margin-left: 300px;
+    position: relative;
+
+}
+
+#footer{
+    min-height: 100px;
+    background: purple;
+    text-align: center;
+    line-height: 100px;
+}
+
+#totop{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    background: black;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
